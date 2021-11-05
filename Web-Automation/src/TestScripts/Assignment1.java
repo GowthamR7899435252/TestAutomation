@@ -30,8 +30,7 @@ public class Assignment1 {
 	{
 		try
 		{
-			string path=System.
-			System.setProperty("webdriver.chrome.driver", path+"\\Library\\Driver\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", "D:\\ExampleAutomation\\Automation\\Web-Automation\\Library\\Driver\\chromedriver.exe");
 			oBrowser=new ChromeDriver();
 		}catch(Exception e)
 		{
