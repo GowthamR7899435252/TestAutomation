@@ -5,25 +5,26 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-public class Users {
+public class Users2 {
 	
-	@Test
+	@Test(priority=1)
 	public void createUser()
 	{
-		System.out.println("The User has created Successfully");
+		System.out.println("The User DemoUser1 has created Successfully");
 	}
 	
-	
-	@Test
+
+	@Test(priority=2)
 	public void modifyUser()
 	{
-		System.out.println("The User has modified Successfully");
+		System.out.println("The User DemoUser1 has modified Successfully");
 	}
 	
-	@Test
+
+	@Test(priority=3)
 	public void deleteUser()
 	{
-		System.out.println("The User has deleted Successfully");
+		System.out.println("The User DemoUser1 has deleted Successfully");
 	}
 	
 	@BeforeClass

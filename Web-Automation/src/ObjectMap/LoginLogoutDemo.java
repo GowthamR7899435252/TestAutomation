@@ -19,13 +19,14 @@ public class LoginLogoutDemo {
 		login();
 		minimizeFlyOutWindow();
 		logout();
+		closeApplication();
 	}
 	static void launchBrowser()
 	{
 		try
 		{
-			//String path=System.getProperty("user.dir");
-			//System.setProperty("webdriver.chrome.driver", path+"\\Library\\drivers\\chromedriver.exe");
+			String path=System.getProperty("user.dir");
+			System.setProperty("webdriver.chrome.driver", path+"\\Library\\Driver\\chromedriver.exe");
 			System.setProperty("webdriver.chrome.driver", "D:\\ExampleAutomation\\Automation\\Web-Automation\\Library\\Driver\\chromedriver.exe");
 			oBrowser=new ChromeDriver();
 			objectmap=new ObjectMap(filename);
@@ -84,5 +85,19 @@ public class LoginLogoutDemo {
 			e.printStackTrace();		
 		}
 	}
+	
+	static void closeApplication()
+	{
+		try
+		{
+			oBrowser.close();
+		}catch(Exception e)
+		{
+			e.printStackTrace();		
+		}
+	}
+
+	
+	
 
 }
