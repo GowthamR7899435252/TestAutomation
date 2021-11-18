@@ -6,7 +6,7 @@ public class Sample {
 	{
 		System.out.println("It is display1 method statement...");
 	}
-	public void display2()
+	public void addition2()
 	{
 		System.out.println("It is display2 method statement...");
 	}

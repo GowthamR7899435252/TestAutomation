@@ -12,15 +12,16 @@ public class SampleDemo {
 			for(int i=0;i<method.length;i++)
 			{
 				String name=method[i].getName();
-				if(name.startsWith("display"))
-				{
-					method[i].invoke(obj);
-				}
+				
+				   if(name.startsWith("display"))
+				   {
+					   method[i].invoke(obj);
+				    }
 			}
 		}catch(Exception e)
-		{
-			e.printStackTrace();
-		}
+		  {
+		   e.printStackTrace();
+		  }
 
 	}
 
