@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="ActiTime">
+  <test name="7 Assignments Scenarious">
+  	<classes>
+  		<class name="com.sgtesting.ActiTimescenarious.Assignment1"></class>
+  		<class name="com.sgtesting.ActiTimescenarious.Assignment2"></class>
+  		<class name="com.sgtesting.ActiTimescenarious.Assignment3"></class>
+  		<class name="com.sgtesting.ActiTimescenarious.Assignment4"></class>
+  		<class name="com.sgtesting.ActiTimescenarious.Assignment5"></class>
+  		<class name="com.sgtesting.ActiTimescenarious.Assignment6"></class>
+  		<class name="com.sgtesting.ActiTimescenarious.Assignment7"></class>
+  	</classes>
+  </test>
+</suite>

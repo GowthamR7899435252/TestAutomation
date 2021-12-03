@@ -1,7 +1,6 @@
 package com.sgtesting.softassertions;
 
 import org.testng.Assert;
-
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 // assertSame verifies the reference

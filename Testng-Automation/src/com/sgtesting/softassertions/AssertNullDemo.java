@@ -1,8 +1,6 @@
 package com.sgtesting.softassertions;
 
 import java.io.File;
-
-
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
