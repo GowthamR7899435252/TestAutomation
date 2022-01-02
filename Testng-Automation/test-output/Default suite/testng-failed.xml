@@ -3,15 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.sgtesting.tests.users.UsersWithParameter">
+      <class name="com.sgtesting.hardassertions.AssertTrueDemo">
         <methods>
-          <include name="intialize"/>
-          <include name="createUser"/>
-          <include name="deleteUser"/>
-          <include name="tearDown"/>
-          <include name="modifyUser"/>
+          <include name="assertTrueDemo"/>
         </methods>
-      </class> <!-- com.sgtesting.tests.users.UsersWithParameter -->
+      </class> <!-- com.sgtesting.hardassertions.AssertTrueDemo -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

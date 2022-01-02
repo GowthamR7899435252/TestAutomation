@@ -2,6 +2,7 @@ package com.sgtesting.actitime.tests;
 
 import java.util.regex.Pattern;
 
+
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -51,6 +52,7 @@ public class Users extends DriverScript{
 			oBrowser.findElement(By.id("userDataLightBox_passwordCopyField")).sendKeys(retypepassword);
 			oBrowser.findElement(By.className("buttonTitle")).click();
 			Thread.sleep(5000);
+			
 			String user=lastname+", "+firstname;
 			By by=By.xpath("//span[text()='"+user+"']");
 			if (ApplicationDependent.isObjectPresent(oBrowser, by)==true)
@@ -98,6 +100,7 @@ public class Users extends DriverScript{
 			Thread.sleep(2000);
 			oBrowser.findElement(By.className("buttonTitle")).click();
 			Thread.sleep(5000);
+			
 			actual=oBrowser.getTitle();
 			if (actual.equalsIgnoreCase(expected))
 			{
@@ -137,6 +140,7 @@ public class Users extends DriverScript{
 			Thread.sleep(2000);
 			oBrowser.findElement(By.id("userDataLightBox_deleteBtn")).click();
 			Thread.sleep(2000);
+			
 			Alert oAlert=oBrowser.switchTo().alert();
 			if (ApplicationDependent.isAlertPresent(oBrowser)==true)
 			{
