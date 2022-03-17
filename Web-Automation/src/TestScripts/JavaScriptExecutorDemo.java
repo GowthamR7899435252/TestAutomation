@@ -1,10 +1,10 @@
 package TestScripts;
 import org.openqa.selenium.By;
-
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+
 public class JavaScriptExecutorDemo {
 	public static WebDriver oBrowser=null;
 	public static void main(String[] args) {
@@ -32,6 +32,7 @@ public class JavaScriptExecutorDemo {
 			String path=System.getProperty("user.dir");
 			System.setProperty("webdriver.chrome.driver", path+"\\Library\\Driver\\chromedriver.exe");
 			oBrowser=new ChromeDriver();
+			
 		}catch(Exception e)
 		{
 			e.printStackTrace();		

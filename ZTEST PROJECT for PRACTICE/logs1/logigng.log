@@ -1,0 +1,19 @@
+2022-02-22 23:39:50 INFO  Automation:108 - handling frames starts from here
+2022-02-22 23:40:07 INFO  Automation:144 - handling frames ends here
+2022-02-22 23:41:55 INFO  Automation:105 - handling frames starts from here
+2022-02-22 23:42:12 INFO  Automation:153 - handling frames ends here
+2022-02-22 23:42:58 INFO  Automation:105 - handling frames starts from here
+2022-02-22 23:43:12 INFO  Automation:140 - All Superinterfaces:
+SearchContext
+All Known Implementing Classes:
+ChromeDriver, ChromiumDriver, EdgeDriver, EventFiringWebDriver, FirefoxDriver, InternetExplorerDriver, OperaDriver, RemoteWebDriver, SafariDriver
+public interface WebDriver
+extends SearchContext
+WebDriver is a remote control interface that enables introspection and control of user agents (browsers). The methods in this interface fall into three categories:
+Control of the browser itself
+Selection of WebElements
+Debugging aids
+Key methods are get(String), which is used to load a new web page, and the various methods similar to findElement(By), which is used to find WebElements.
+Currently, you will need to instantiate implementations of this interface directly. It is hoped that you write your tests against this interface so that you may "swap in" a more fully featured browser when there is a requirement for one.
+Most implementations of this interface follow W3C WebDriver specification
+2022-02-22 23:43:14 INFO  Automation:154 - handling frames ends here

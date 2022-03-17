@@ -1,7 +1,6 @@
 package HandlingFrameworks;
 
 import org.openqa.selenium.By;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -18,8 +17,11 @@ public class FramesDemo {
 	{
 		try
 		{
-			System.setProperty("webdriver.chrome.driver", "D:\\ExampleAutomation\\Automation\\Web-Automation\\Library\\Driver\\chromedriver.exe");
+			String path=System.getProperty("user.dir");
+			System.setProperty("webdriver.chrome.driver",path+ "\\Library\\\\Driver\\\\chromedriver.exe");
 			oBrowser=new ChromeDriver();
+			oBrowser.manage().window().maximize();
+			
 		}catch(Exception e)
 		{
 			e.printStackTrace();		
@@ -30,7 +32,7 @@ public class FramesDemo {
 	{
 		try
 		{
-			oBrowser.get("file:///D:/ExampleAutomation/handlin%20framworks/FramesDemo.html");
+			oBrowser.get("https://www.selenium.dev/selenium/docs/api/java/index.html?overview-summary.html");
 			Thread.sleep(4000);
 		}catch(Exception e)
 		{

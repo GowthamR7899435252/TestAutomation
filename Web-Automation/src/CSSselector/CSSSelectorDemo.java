@@ -2,6 +2,7 @@ package CSSselector;
 
 import java.util.List;
 
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -11,8 +12,8 @@ public class CSSSelectorDemo {
 	public static WebDriver oBrowser=null;
 	public static void main(String[] args) {
 		launchBrowser();
-		navigate();
-		absoluteCSSPath();
+	//	navigate();
+	//	absoluteCSSPath();
 	//	relativeCSSUsingTagNameAlone();
 	//	relativeCSSUsingTagNameWithIDAttributeValue();
 	//	relativeCSSUsingIDAttributeValue();
@@ -47,7 +48,7 @@ public class CSSSelectorDemo {
 	{
 		try
 		{
-			oBrowser.get("file:///D:/ExampleAutomation/Sample.html");
+			oBrowser.get("file:/D:/ExampleAutomation/Sample.html");
 			Thread.sleep(4000);
 		}catch(Exception e)
 		{
